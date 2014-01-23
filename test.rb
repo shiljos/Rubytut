@@ -148,19 +148,19 @@
 
 
 
-def puts_dva(*args)
-	arg1, arg2 = args
-	puts "arg1: #{arg1}, arg2: #{arg2}"
-end
+# def puts_dva(*args)
+# 	arg1, arg2 = args
+# 	puts "arg1: #{arg1}, arg2: #{arg2}"
+# end
 
-#puts_dva("mirko","slavko")
+# #puts_dva("mirko","slavko")
 
-def cheese_and_crackers(cheese_count, boxes_of_crackers)
+# def cheese_and_crackers(cheese_count, boxes_of_crackers)
 
-	puts "U have #{cheese_count} of cheese"
-	puts "U have #{boxes_of_crackers} boxes_of_crackers"
+# 	puts "U have #{cheese_count} of cheese"
+# 	puts "U have #{boxes_of_crackers} boxes_of_crackers"
 	
-end
+# end
 
 #puts "Arg values diectly"
 #cheese_and_crackers(10,40)
@@ -168,30 +168,30 @@ end
 
 
 #puts "Variable values "
-cheese_count = 30
-boxes_of_crackers = 50
+# cheese_count = 30
+# boxes_of_crackers = 50
 #cheese_and_crackers(cheese_count,boxes_of_crackers)
 
 #cheese_and_crackers(cheese_count+74, boxes_of_crackers-10)
 
 
-input_file = ARGV[1]
+#input_file = ARGV[1]
 
-def print_all(f)
+# def print_all(f)
 
-	puts f.read()
+# 	puts f.read()
 
-end
+# end
 
-def print_line(curr_line,f)
+# def print_line(curr_line,f)
 
-	puts "#{curr_line} #{f.readline()}"
+# 	puts "#{curr_line} #{f.readline()}"
 	
-end
+# end
 
-def rewind(f)
-	f.seek(0, IO::SEEK_SET)
-end
+# def rewind(f)
+# 	f.seek(0, IO::SEEK_SET)
+# end
 
 #curr_file = File.open(input_file)
 
@@ -205,39 +205,39 @@ end
 
 #puts "print_line"
 
-curr_line = 1
+#curr_line = 1
 #print_line(curr_line,curr_file)
 
-curr_line = curr_line + 1
+#curr_line = curr_line + 1
 #print_line(curr_line, curr_file)
 
 
-def add(a, b)
+# def add(a, b)
 
-	puts "ADDING #{a} + #{b}"
-	a+b
+# 	puts "ADDING #{a} + #{b}"
+# 	a+b
 	
-end
+# end
 
-def sub(a, b)
+# def sub(a, b)
 
-	puts "SUBSTRACTING #{a} - #{b}"
-	a-b
+# 	puts "SUBSTRACTING #{a} - #{b}"
+# 	a-b
 	
-end
+# end
 
-def mult(a, b)
+# def mult(a, b)
 
-	puts "MULTIPLYING #{a} * #{b}"	
-	a*b
-end
+# 	puts "MULTIPLYING #{a} * #{b}"	
+# 	a*b
+# end
 
-def div(a, b)
+# def div(a, b)
 
-	puts "DIVIDING #{a} / #{b}"
-	a/b
+# 	puts "DIVIDING #{a} / #{b}"
+# 	a/b
 	
-end
+# end
 
 #addy = add(7,5)
 #multy = mult(15, 44)
@@ -252,40 +252,324 @@ end
 
 #puts "#{op}"
 
-#-------------------------------
+#-------------------------------/////////////////////////////////////////////////
 
-poem = <<MULTI_LINE_STRING
+#poem = <<MULTI_LINE_STRING
 
-\tThe lovely world
-with logic so firmly planted
-cannot discern \n the needs of love
-nor comprehend passion from intuition
-and requires an explanation
-\n\t\twhere there is none.
+#\tThe lovely world
+#with logic so firmly planted
+#cannot discern \n the needs of love
+#nor comprehend passion from intuition
+#and requires an explanation
+#\n\t\twhere there is none.
 
-MULTI_LINE_STRING
+#MULTI_LINE_STRING
 
-puts "------"
-puts poem
-puts "======"
+#puts "------"
+#puts poem
+#puts "======"
 
-five = 10-2+3-6
-puts "This should be five : #{five}"
+#five = 10-2+3-6
+#puts "This should be five : #{five}"
 
-def secret_formula(started)
+# def secret_formula(started)
 	
-	jelly_beans = started * 500
-	jars  = jelly_beans / 1000
-	crates = jars / 100
+# 	jelly_beans = started * 500
+# 	jars  = jelly_beans / 1000
+# 	crates = jars / 100
 
-	return jelly_beans,jars,crates
+# 	return jelly_beans,jars,crates
+# end
+
+# start_point = 10000
+#beans, jars, crates = secret_formula(start_point)
+
+#puts "#{beans},  #{jars}, #{crates}"
+
+#start_point = start_point / 10
+
+#puts " beans : %d , jars : %d, crates : %d " %secret_formula(start_point)
+
+#------------------------------------------------------------------------------------
+#
+#
+#
+#
+#
+#
+# module Ttest
+
+# 	def self.split_words(stuff)
+
+# 		words = stuff.split(' ')
+# 		return words
+
+# 	end
+
+
+# 	def self.sort_words(words)
+
+# 		return words.sort()
+# 	end
+	
+
+# 	def self.print_first_word(words)
+
+# 		word = words.shift()
+# 		puts word
+
+# 	end
+
+
+# 	def self.print_last_word(words)
+
+# 		word = words.pop()
+# 		puts word
+		
+# 	end
+
+# 	def self.sort_sentence(sentence)
+
+# 		words = split_words(sentence)
+# 		sort_words(words)
+		
+# 	end
+
+# 	def self.print_firs_and_last(sentence)
+
+# 		words = split_words(sentence)
+# 		print_first_word(words)
+# 		print_last_word(words)
+
+# 	end
+
+
+# 	def self.Sfirst_and_last_sorted(sentence)
+
+# 		words = sort_sentence(sentence)
+# 		print_first_word(words)
+# 		print_last_word(words)
+		
+# 	end
+
+# 	sentence = "asdasd asda sadi idasdasjd asdjaisdasdj blur"
+# 	#print_firs_and_last(sentence)
+# 	first_and_last_sorted(sentence)
+# end
+
+
+# people = 30
+# cars = 40
+# buses = 15
+
+# if people > cars 
+# 	puts " more people then cars"
+# elsif people < cars 
+# 	puts " more cars then people "
+# else 
+# 	puts " nista"
+# end
+
+# if people > buses 
+# 	puts "more people then buses"
+# else 
+# 	puts "nistanisntatasda"
+# end
+
+#????????????--------------------------------------???????????????????????
+#
+
+# def prompt
+# 	print "<"	
+# end
+
+# puts "You enter a dark room with 2 doors. Do u go through door #1 or #2 ?"
+
+# prompt; door = gets.chomp()
+
+# if door == "1"
+
+# 	puts "There's a giant bear here eating a cheese cake.  What do you do?"
+# 	puts "1.U take the chese"
+# 	puts "2. scream at the bear"
+
+# 	prompt; bear = gets.chomp()
+
+# 	if bear == "1"
+# 			puts " The bear eats your face off. Good job !"
+# 	elsif bear == "2"
+# 			puts " The bear eats your legs off. GOOD JOb !!!"
+# 	else
+# 			puts " Well doing #{bear} is probably better, the bear runs off"
+# 	end
+
+# elsif door == "2"
+
+#   puts "You stare into the endless abyss at Cthuhlu's retina."
+#   puts "1. Blueberries."
+#   puts "2. Yellow jacket clothespins."
+#   puts "3. Understanding revolvers yelling melodies."
+	
+#  	prompt; insanity = gets.chomp()
+
+#  	if insanity == "1" or insanity == "2"
+#     		puts "Your body survives powered by a mind of jello.  Good job!"
+# 	else
+#     		puts "The insanity rots your eyes into a pool of muck.  Good job!"
+#  	end
+
+#  else
+#  	puts "to je toooo"
+# end
+
+
+#////////////////////////////////--------------------------------------------/////////////////////////////////
+
+
+# the_count = [1, 2, 3, 4, 5]
+# fruits = ['apples', 'oranges', 'pears', 'apricots']
+# change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
+
+# for number in the_count
+# 	puts "This is count #{number}"
+# end
+
+# fruits.each do |fruit|
+# 	puts "A fruit of type #{fruit}"
+# end
+
+# for i in change
+# 	puts "I got #{i}"
+# end
+
+# elements = []
+
+# for i in (0..5)
+# 	puts "Puts #{i} to the list"
+# 	elements.push(i)
+# end
+
+# for i in elements
+# 	puts "elements(#{i})"
+# end
+
+#????????????????????????????????????????????????????????????????
+
+# i = 0
+# numbers = []
+
+# while i < 6
+
+# 	puts "at the top i is #{i}"
+# 	numbers.push(i)
+
+# 	i += 1
+# 	puts "numbers now - #{numbers}"
+# 	puts "at the bottom i is #{i}"
+
+# end
+
+# puts "Numbers"
+
+# for num in numbers
+# 	puts num
+# end
+
+#-----------------------------------////////////////////
+
+def prompt
+
+	print ">"
+	
 end
 
-start_point = 10000
-beans, jars, crates = secret_formula(start_point)
+def gold_room()
 
-puts "#{beans},  #{jars}, #{crates}"
+	 puts "This room is full of gold.  How much do you take?"
 
-start_point = start_point / 10
+	 prompt; next_move = gets.chomp
 
-puts " beans : %d , jars : %d, crates : %d " %secret_formula(start_point)
+	 if next_move.include? "0" or next_move.include? "1"
+
+	 		how_much = next_move.to_i()
+	 else 
+	 	dead("Learn to type a number")
+	 end		
+
+	 if how_much < 50
+	 	puts "nice u are not greedy , u wiin !"
+	 	Process.exit(0)
+	 else 
+	 	dead("U greedy bastard !")
+	 end
+end
+
+def bear_room()
+
+  puts "There is a bear here."
+  puts "The bear has a bunch of honey."
+  puts "The fat bear is in front of another door."
+  puts "How are you going to move the bear?"
+  bear_moved = false
+
+	while true
+	
+		prompt; next_move = gets.chomp
+
+		if next_move == "take honey"
+			dead("The bear looks at you then slaps your face off.")
+		elsif next_move == "taunt bear" and not bear_moved
+			puts "the bear moves and u can go through the door"
+			bear_moved = true
+		elsif next_move == "taunt bear" and bear_moved
+			dead("The bear gets pissed off and chews your leg off.")
+		elsif next_move == "open door" and  bear_moved
+			gold_room()
+		else
+			puts " nenennenenenenenenenenenenenen"
+		end
+	end
+
+end
+
+def cthulhu_room()
+
+  puts "Here you see the great evil Cthulhu."
+  puts "He, it, whatever stares at you and you go insane."
+  puts "Do you flee for your life or eat your head?"
+	
+	prompt; next_move = gets.chomp
+
+	if next_move.include? "flee"
+		start()
+	elsif next_move.include? "head"
+		dead("Well that was tasty!")
+	else
+		cthulhu_room()
+	end	
+end
+
+def dead(why)
+
+	puts "#{why} . GOOD Job !"
+	Process.exit(0)
+	
+end
+
+def start()
+
+  puts "You are in a dark room."
+  puts "There is a door to your right and left."
+  puts "Which one do you take?"
+
+	prompt; next_move = gets.chomp()	
+
+	if next_move == "left"
+		bear_room()
+	elsif next_move == "right"
+		cthulhu_room()		
+	else
+		dead("You stumble around the room until you starve.")
+	end
+end
+start()
